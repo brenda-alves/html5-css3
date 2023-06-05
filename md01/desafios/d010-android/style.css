@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body { 
+    background-color: #a9e5b3;
+    margin: 0px;
+}
+
+main {
+    margin: auto;
+}
+
+nav > a {
+    margin: 5px;
+    text-decoration: none;
+}
