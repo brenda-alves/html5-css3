@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 200px;
+            border-collapse: collapse;
+        }
+
+        td {
+            text-align: center;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .cor1 {
+            background-color: #54EA72;
+        }
+
+        .cor2 {
+            background-color: #9B6CEB;
+        }
+
+        .cor3 {
+            background-color: #EBC349;
+        }
+
+        .cor4 {
+            background-color: #EB3D56;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="cor1" colspan="4">A</td>
+            <td class="cor2" rowspan="4">B</td>
+            
+        </tr>
+        <tr>
+            <td class="cor3" rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td class="cor4" colspan="4">N</td>
+        </tr>
+    </table>
+</body>
+</html>

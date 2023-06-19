@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         caption {
             font-size: 1.5em;
@@ -23,6 +24,16 @@
         td, th {
             border: 1px solid black;
             padding: 5px;
+        }
+
+        th.pontual {
+            width: 50px;
+        }
+
+        thead > tr > th { /*Pra grudar o th no top*/
+            position: sticky;
+            top: -1px;
+            background-color: black;
         }
 
         tbody > tr:nth-child(even) {
@@ -55,8 +66,10 @@
     <table>
         <caption>População das unidades federativas</caption>
         <thead>
-            <th scope="col">Estado</th>
-            <th scope="col" style="width: 50px  ">População</th>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" class="pontual">População</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
