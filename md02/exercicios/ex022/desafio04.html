@@ -56,19 +56,19 @@
         <caption>Tabela de Notas</caption>
         <thead>
             <tr>
-                <th class="titulos" rowspan="2">Área</th>
-                <th class="titulos" rowspan="2">Disciplinas</th>
-                <th class="titulos" colspan="2">Notas</th>
-                <th class="titulos" rowspan="2">Média</th>
+                <th class="titulos" rowspan="2" scope="col">Área</th>
+                <th class="titulos" rowspan="2" scope="colgroup">Disciplinas</th>
+                <th class="titulos" colspan="2" scope="colgroup">Notas</th>
+                <th class="titulos" rowspan="2" scope="colgroup">Média</th>
             </tr>
             <tr>
-                <th class="titulos">Nota 1</th>
-                <th class="titulos">Nota 2</th>
+                <th class="titulos" scope="colgroup">Nota 1</th>
+                <th class="titulos" scope="colgroup">Nota 2</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
                 <td class="center">0.0</td>
                 <td class="center">0.0</td>
@@ -93,11 +93,11 @@
                 <td class="center">0.0</td>
             </tr>
             <tr>
-                <th class="th-left" colspan="4">Média de Exatas</th>
+                <th class="th-left" colspan="4" scope="row">Média de Exatas</th>
                 <td class="data">0.0</td>
             </tr>
             <tr>
-                <th rowspan="2">Humanas</th>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                 <td>História</td>
                 <td class="center">0.0</td>
                 <td class="center">0.0</td>
@@ -110,7 +110,7 @@
                 <td class="center">0.0</td>
             </tr>
             <tr>
-                <th class="th-left" colspan="4">Média de Humanas</th>
+                <th class="th-left" colspan="4" scope="row">Média de Humanas</th>
                 <td class="data">0.0</td>
             </tr>
         </tbody>
